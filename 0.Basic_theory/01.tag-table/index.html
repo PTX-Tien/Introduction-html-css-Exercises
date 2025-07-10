@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Tag</title>
+  </head>
+  <body>
+    <a href="../../index.html">Back to Menu</a><br />
+
+    <h1>Learning tag &lt;table&gt;</h1>
+    <h2>Definition</h2>
+    <p>
+      The <code>&lt;table&gt;</code> tag is used to create a table in HTML. It
+      allows you to organize data in rows and columns.
+    </p>
+    <h2>Basic Structure</h2>
+    <pre><code>&lt;table&gt;
+    &lt;thead&gt; <!-- Table Head -->
+        &lt;tr&gt; <!-- Table Row -->
+            &lt;th&gt;Header 1&lt;/th&gt; <!-- Table Header -->
+            &lt;th&gt;Header 2&lt;/th&gt;
+            &lt;th&gt;Header 3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt; <!-- Table Row -->
+            &lt;td&gt;Data 1&lt;/td&gt; <!-- Table Data -->
+            &lt;td&gt;Data 2&lt;/td&gt;
+            &lt;td&gt;Data 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt; <!-- Table Row -->
+            &lt;td&gt;Data 4&lt;/td&gt;
+            &lt;td&gt;Data 5&lt;/td&gt;
+            &lt;td&gt;Data 6&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt; <!-- Table Footer -->
+    &lt;tr&gt; <!-- Table Row -->
+        &lt;td&gt;Data 7&lt;/td&gt;
+        &lt;td&gt;Data 8&lt;/td&gt;
+        &lt;td&gt;Data 9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+    <h2>Example Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+        <tr>
+          <td>Data 4</td>
+          <td>Data 5</td>
+          <td>Data 6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Data 7</td>
+          <td>Data 8</td>
+          <td>Data 9</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Learning Colspan and Rowspan</h2>
+    <p>
+      The <code>colspan</code> attribute allows a cell to span multiple columns,
+      while the <code>rowspan</code> attribute allows a cell to span multiple
+      rows.
+    </p>
+    <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;This cell spans 2 columns&lt;/td&gt;
+        &lt;td&gt;Normal Cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="2"&gt;This cell spans 2 rows&lt;/td&gt;
+        &lt;td&gt;Normal Cell&lt;/td&gt;
+        &lt;td&gt;Normal Cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Normal Cell&lt;/td&gt;
+        &lt;td&gt;Normal Cell&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    <h2>Example with Colspan and Rowspan</h2>
+    <table border="1">
+      <tr>
+        <td colspan="2">This cell spans 2 columns</td>
+        <td>Normal Cell</td>
+      </tr>
+      <tr>
+        <td rowspan="2">This cell spans 2 rows</td>
+        <td>Normal Cell</td>
+        <td>Normal Cell</td>
+      </tr>
+      <tr>
+        <td>Normal Cell</td>
+        <td>Normal Cell</td>
+      </tr>
+    </table>
+    <h2>Further Reading</h2>
+    <p>
+      For more detailed information, you can refer to the official documentation
+      or online tutorials.
+    </p>
+
+    <h2>Assignments:</h2>
+    <ol type="i">
+      <li><a href="../00.tag-code/index.html" target="_self">Code tag</a></li>
+      <li><a href="../01.tag-table/index.html" target="_self">Table tag</a></li>
+    </ol>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th colspan="2">Mô tả</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Áo phông</td>
+          <td>Chất liệu</td>
+          <td>Bạt</td>
+        </tr>
+        <tr>
+          <td>Kích thước</td>
+          <td>M, L, XL</td>
+        </tr>
+        <tr>
+          <td>Quần jean</td>
+          <td colspan="2">Quần jean cao cấp, dễ phối đồ</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
