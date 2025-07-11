@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h4 {
+        color: red;
+        font-style: italic;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Priority in CSS</title>
+  </head>
+  <body>
+    <a href="../index.html">Return</a><br />
+    <h1>Priority in CSS</h1>
+    <p>
+      In CSS, the priority of styles determines which styles are applied when
+      multiple rules match the same element. The priority is determined by the
+      specificity of the selectors and the order in which they are defined.
+    </p>
+    <h2>Specificity Levels</h2>
+    <ol>
+      <li><b>Inline styles</b> (highest priority)</li>
+      <li><b>Internal styles</b></li>
+      <li><b>External styles</b> (lowest priority)</li>
+    </ol>
+    <p>
+      Inline styles have the highest priority because they are applied directly
+      to the HTML element. Internal styles come next, as they are defined within
+      the HTML document. External styles have the lowest priority since they are
+      linked from an external file.
+    </p>
+    <h2>Example of Priority</h2>
+    <h3>Example 1: Inline vs Internal CSS</h3>
+    <pre><code><b style="color: green;">&lt;- Internal CSS -&gt;</b>
+&lt;style&gt;
+    .example {
+        color: <b style="color: blue;">blue</b>;    /* Internal style */
+    }
+&lt;/style&gt;
+
+<b style="color: green;">&lt;- Inline CSS -&gt;</b>
+&lt;div class="example" style="color: <b style="color: red;">red</b>;"&gt;<b style="color: red;">This text will be red.</b>&lt;/div&gt;
+</code></pre>
+    <p>
+      In this example, the text inside the <code>&lt;div&gt;</code> will be red
+      because the inline style (<code
+        >style="color: <b style="color: red">red</b>;"</code
+      >) has a higher priority than the internal style (<code
+        >.example { color: <b style="color: blue">blue</b>; }</code
+      >).
+    </p>
+    <h3>Example 2: Internal vs External CSS</h3>
+    <pre><code><b style="color: green;">&lt;- Internal CSS -&gt;</b>
+&lt;style&gt;
+    h4 {
+        color: <b style="color: blue;">blue</b>;    /* Internal style */
+    }
+&lt;/style&gt;
+
+<b style="color: green;">&lt;- External CSS -&gt;</b>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+
+<b style="color: green;">&lt;- styles.css -&gt;</b>
+h4 {
+    color: <b style="color: red;">red</b>;  /* External style */
+}
+
+&lt;h4&gt;<b style="color: red;">This text will be green.</b>&lt;/h4&gt;
+</code></pre>
+    <p>
+      In this example, the text inside the <code>&lt;h4&gt;</code> will be
+      <b style="color: red">red</b>
+      because if both styles had the same specificity, the one defined last
+      would take precedence.
+    </p>
+    <h2>Order of Precedence</h2>
+    <p>
+      If multiple rules have the same specificity,
+      <b>the one that appears last in the CSS will take precedence</b>. This
+      means that if you define a style for an element multiple times, the last
+      one will be applied.
+    </p>
+    <h4>Test Order of Precedence</h4>
+    <h2>Understanding Specificity</h2>
+    <p>
+      Specificity is calculated based on the types of selectors used. The more
+      specific a selector is, the higher its priority. Here are some examples:
+    </p>
+    <ul>
+      <li>
+        <code>id</code> selectors (e.g., <code>#example</code>) have higher
+        specificity than class selectors (e.g., <code>.example</code>).
+      </li>
+      <li>
+        Class selectors have higher specificity than element selectors (e.g.,
+        <code>div</code>).
+      </li>
+      <li>
+        Inline styles have the highest specificity, overriding all other styles.
+      </li>
+    </ul>
+    <p>
+      If two selectors have the same specificity, the one that appears last in
+      the CSS will take precedence.
+    </p>
+    <h2>Practical Tips</h2>
+    <ul>
+      <li>
+        Use inline styles sparingly, as they can make your code harder to
+        maintain.
+      </li>
+      <li>
+        Prefer internal or external styles for better organization and
+        reusability.
+      </li>
+      <li>
+        Be mindful of the order in which you define your styles to avoid
+        unintended overrides.
+      </li>
+      <li>
+        Use browser developer tools to inspect elements and see which styles are
+        being applied and overridden.
+      </li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      Understanding CSS priority is essential for effective styling of web
+      pages. By knowing how specificity and order affect which styles are
+      applied, you can create more predictable and maintainable CSS.
+    </p>
+    <h2>Further Reading</h2>
+    <p>
+      For more information on CSS specificity and priority, you can refer to the
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"
+        target="_blank"
+        >MDN Web Docs on Specificity</a
+      >.
+    </p>
+    <h2>Related Topics</h2>
+    <ul>
+      <li><a href="../0.inline/index.html">Inline CSS</a></li>
+      <li><a href="../1.internal/index.html">Internal CSS</a></li>
+      <li><a href="../2.external/index.html">External CSS</a></li>
+    </ul>
+    <p>
+      For more CSS-related topics, you can explore the
+      <a href="../../../index.html">CSS section</a> of this website.
+    </p>
+  </body>
+</html>
