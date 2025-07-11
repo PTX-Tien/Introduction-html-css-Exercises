@@ -7,9 +7,11 @@ img {
 input:checked ~ img {
   /* 1.Biến mất khỏi giao diện */
   /* display: none; */
+
   /* 2.Ẩn khỏi giao diện nhưng vẫn chiếm vị trí */
   /* visibility: hidden; */
-  /* 3. Làm mờ đi sau đó ẩn hẳn khỏi giao diện*/
+
+  /* 3. Làm mờ đi, sau đó ẩn hẳn khỏi giao diện, rồi xóa hẳn khỏi giao diện*/
   opacity: 0;
   visibility: hidden;
 }

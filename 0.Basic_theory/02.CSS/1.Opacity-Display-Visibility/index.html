@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Opacity-Display-Visibility</title>
+  </head>
+  <body>
+    <a href="../../index.html">Return</a><br />
+
+    <h1>CSS Opacity, Display, Visibility</h1>
+    <h2>Opacity</h2>
+    <h3>Định nghĩa:</h3>
+    <p>
+      Thuộc tính <code>opacity</code> quy định độ trong suốt. Giá trị của
+      <code>opacity</code> là một số trong khoảng từ 0 đến 1.
+    </p>
+    <p>
+      Trong đó 0 là hoàn toàn trong suốt và 1 là hoàn toàn không trong suốt. Giá
+      trị giữa 0 và 1 sẽ tạo ra hiệu ứng trong suốt một phần.
+    </p>
+    <p>Ví dụ:</p>
+    <div class="example">
+      <div class="box" style="opacity: 0.5">Box này có 50% độ trong suốt</div>
+    </div>
+
+    <h3>Lưu ý:</h3>
+    <ul>
+      <li>Không nhìn thấy trên giao diện</li>
+      <li>Vẫn chiếm không gian</li>
+      <li>Vẫn tương tác được</li>
+    </ul>
+
+    <h2>Display</h2>
+    <p>
+      Thuộc tính <code>display:none</code> - ẩn phần tử khỏi giao diện (Xóa cả
+      không gian nó đang chiếm)
+    </p>
+    <p>Ví dụ:</p>
+
+    <p class="box" style="display: block">Box này hiển thị</p>
+    <p class="box" style="display: none">Box này không hiển thị</p>
+
+    <h2>Visibility</h2>
+    <p>
+      Thuộc tính <code>visibility</code>điều khiển khả năng "nhìn thấy" phần tử.
+      Có các cách thiết lập giá trị: <code>visible</code>, <code>hidden</code>,
+      hoặc <code>collapse</code>.
+    </p>
+    <p>Ví dụ:</p>
+    <p class="box" style="visibility: visible">Box này hiển thị</p>
+    <p class="box" style="visibility: hidden">Box này không hiển thị</p>
+    <p class="box" style="visibility: collapse">Box này không hiển thị</p>
+    <h3>Lưu ý:</h3>
+
+    <ol>
+      <li>
+        <code>visibility: collapse</code> thường được sử dụng trong các bảng để
+        ẩn hàng hoặc cột mà không làm thay đổi bố cục của bảng.
+      </li>
+      <li>
+        Sự khác biệt giữa <code>display: none</code> và
+        <code>visibility: hidden</code> là:
+      </li>
+      <ul>
+        <li>
+          <code>display: none</code> - Phần tử không hiển thị và không chiếm
+          không gian.
+        </li>
+        <li>
+          <code>visibility: hidden</code> - Phần tử không hiển thị nhưng vẫn
+          chiếm không gian (<b style="color: violet"
+            >nhưng không tương tác được</b
+          >).
+        </li>
+      </ul>
+    </ol>
+    <h2>So sánh:</h2>
+    <img
+      src="./img/comparision.png"
+      alt="so sánh opacity, display, visibility"
+      width="600"
+    />
+
+    <h2>Tóm lại:</h2>
+    <p>
+      Các thuộc tính <code>opacity</code>, <code>display</code>, and
+      <code>visibility</code> được sử dụng để điều khiển cách hiển thị phần tử
+      trong trang web. Chúng cho phép bạn tạo ra các hiệu ứng trực quan khác
+      nhau, từ việc làm mờ các phần tử đến việc ẩn chúng hoàn toàn hoặc chỉ làm
+      cho chúng không nhìn thấy được trong giao diện người dùng.
+    </p>
+  </body>
+</html>

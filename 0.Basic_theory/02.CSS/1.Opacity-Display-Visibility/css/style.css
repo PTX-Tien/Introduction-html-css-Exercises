@@ -1,0 +1,74 @@
+body {
+  background-image: url(../img/deathconciousness.jpg);
+  /* To adjust only the background image opacity, use a pseudo-element: */
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1; /* Adjust this value for desired opacity */
+  z-index: -1;
+  pointer-events: none; /* Ensure the pseudo-element does not interfere with interactions */
+}
+
+p {
+  color: #fff; /* Adjust text color for better visibility */
+}
+
+h1 {
+  color: #fff; /* Adjust heading color for better visibility */
+  text-align: center; /* Center the main heading */
+}
+
+h2 {
+  color: #fff; /* Adjust subheading color for better visibility */
+}
+
+h3 {
+  color: #fff; /* Adjust sub-subheading color for better visibility */
+}
+
+li {
+  color: #fff; /* Adjust list item color for better visibility */
+}
+
+a {
+  color: #fff; /* Adjust link color for better visibility */
+}
+a:hover {
+  text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+a:visited {
+  color: #ccc; /* Adjust visited link color for better visibility */
+}
+
+div {
+  color: #fff; /* Adjust div text color for better visibility */
+}
+
+code {
+  color: #ff0; /* Adjust code text color for better visibility */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add a semi-transparent background for contrast */
+  padding: 2px 4px; /* Add some padding for better readability */
+}
+
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Make images block-level elements */
+  margin: 0 auto; /* Center images */
+}
