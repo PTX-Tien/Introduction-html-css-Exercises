@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Thêm style vào trước thẻ title -->
+    <style>
+      h3 {
+        color: violet;
+        font-style: italic;
+      }
+
+      ul {
+        color: blue;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../index.html" target="_self">Return</a>
+    <h1>Vị trí đặt CSS</h1>
+    <h2>2. Internal CSS</h2>
+    <p>
+      Internal (CSS nội bộ) là cách viết mã CSS trong phần
+      <code>&lt;head&gt;</code>
+      của trang HTML
+    </p>
+    <h3>Cấu trúc</h3>
+    <pre><code>&lt;head&gt;
+    &lt;style&gt;
+        tagname {
+            property: value;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+    <ol>
+      <li><b>Ví dụ:</b></li>
+      <ul>
+        <li>Dòng thứ 1</li>
+        <li>Dòng thứ 2</li>
+        <li>Dòng thứ 3</li>
+      </ul>
+      <li><b>Nhận xét:</b></li>
+      <ul>
+        <li>Có thể thay đổi màu sắc của cả 3 dòng trên</li>
+        <li>Có thể tái sử dụng cho nhiều dòng khác nhau</li>
+        <li>Dễ bảo trì và cập nhật</li>
+        <li>Dễ áp dụng cho nhiều phần tử cùng lúc</li>
+      </ul>
+    </ol>
+    <h3>Ưu điểm của Internal CSS</h3>
+    <ul>
+      <li>Dễ dàng quản lý và bảo trì</li>
+      <li>Cho phép áp dụng kiểu dáng cho nhiều phần tử cùng lúc</li>
+      <li>Giúp tách biệt nội dung và kiểu dáng</li>
+      <li>Tiết kiệm thời gian khi cần thay đổi kiểu dáng</li>
+    </ul>
+    <h3>Nhược điểm của Internal CSS</h3>
+    <ul>
+      <li>Không thể tái sử dụng trên các trang khác</li>
+      <li>Không thể áp dụng cho nhiều trang cùng lúc</li>
+      <li>Không thể sử dụng lại trong các dự án khác</li>
+      <li>Không thể áp dụng cho các phần tử bên ngoài trang HTML</li>
+    </ul>
+    <p>Để tiện lợi hơn, hãy tham khảo các vị trí đặt khác của CSS:</p>
+    <ul>
+      <li><a href="../2.external/index.html">External CSS</a></li>
+    </ul>
+  </body>
+</html>

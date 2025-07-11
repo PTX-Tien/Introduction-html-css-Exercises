@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>External CSS</title>
+  </head>
+  <body>
+    <a href="../index.html" target="_self">Return</a><br />
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a>
+    <h1>Vị trí đặt CSS</h1>
+    <h2>3. External CSS</h2>
+    <p>
+      External CSS là một tập tin CSS riêng biệt, được liên kết với trang HTML
+      thông qua thẻ <code>&lt;link /&gt;</code>. Điều này cho phép bạn áp dụng
+      cùng một kiểu dáng cho nhiều trang web khác nhau.
+    </p>
+    <h3>Cấu trúc</h3>
+
+    <pre><code class="language-html">&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>
+    <code style="color: violet;"><b>&lt;link rel="stylesheet" href="style.css" /&gt;</b></code>
+    <code>&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+    <ol>
+      <li><b>Ví dụ:</b></li>
+      <ul>
+        <li>Dòng thứ 1</li>
+        <li>Dòng thứ 2</li>
+        <li>Dòng thứ 3</li>
+      </ul>
+      <li><b>Nhận xét:</b></li>
+      <ul>
+        <li>Có thể thay đổi màu sắc của cả 3 dòng trên</li>
+        <li>Có thể tái sử dụng cho nhiều dòng khác nhau</li>
+        <li>Dễ bảo trì và cập nhật</li>
+        <li>Dễ áp dụng cho nhiều phần tử cùng lúc</li>
+      </ul>
+    </ol>
+    <h3>Ưu điểm của External CSS</h3>
+    <ul>
+      <li>Dễ dàng quản lý và bảo trì</li>
+      <li>Cho phép áp dụng kiểu dáng cho nhiều trang web cùng lúc</li>
+      <li>Giúp tách biệt nội dung và kiểu dáng</li>
+      <li>Tiết kiệm thời gian khi cần thay đổi kiểu dáng</li>
+    </ul>
+    <h3>Nhược điểm của External CSS</h3>
+    <ul>
+      <li>
+        Yêu cầu tải thêm một tập tin CSS, có thể làm chậm tốc độ tải trang
+      </li>
+      <li>Cần phải đảm bảo rằng tập tin CSS được liên kết đúng cách</li>
+      <li>
+        Không thể áp dụng kiểu dáng cho các phần tử cụ thể trong trang HTML
+      </li>
+      <li>
+        Cần phải có kiến thức về cách sử dụng thẻ `<link />` để liên kết tập tin
+        CSS
+      </li>
+    </ul>
+  </body>
+</html>
