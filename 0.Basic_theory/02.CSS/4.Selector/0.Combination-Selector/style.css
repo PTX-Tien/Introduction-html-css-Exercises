@@ -1,0 +1,52 @@
+/* * selector */
+* {
+  font-size: 15px;
+}
+
+/* class selector */
+.highlight {
+  color: red;
+}
+
+/* element.class selector */
+p.highlight {
+  background-color: yellow;
+}
+
+.demo1 {
+  color: green;
+}
+
+.demo2 {
+  background-color: pink;
+}
+
+.demo1.demo2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+code {
+  font-family: monospace;
+  background-color: beige;
+}
+
+div.parent p {
+  color: blue;
+}
+
+.loichuc p {
+  font-size: 30px;
+}
+
+div.parent > p {
+  color: purple;
+}
+
+h3 + p {
+  color: green;
+}
+
+h3.example ~ p.example {
+  color: orange;
+}

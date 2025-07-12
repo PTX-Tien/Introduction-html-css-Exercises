@@ -1,0 +1,10 @@
+h1 {
+  color: red;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; /* Không cho phép người dùng bôi đen hay chọn */
+}
+
+/* Nhưng phần nào cần thêm prefix sẽ tự động thêm */
+/* Còn không thì mặc định đã hỗ trợ full trình duyệt */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Prefix</title>
+  </head>
+  <body>
+    <a href="../../index.html">Return</a>
+    <h1>CSS Prefix</h1>
+    <p>
+      CSS prefixes are used to enable experimental features in web browsers.
+      They allow developers to use new CSS properties and values before they are
+      fully standardized.
+    </p>
+    <h2>Common Prefixes</h2>
+    <ul>
+      <li>-webkit-: Used by browsers like Chrome and Safari.</li>
+      <li>-moz-: Used by Firefox.</li>
+      <li>-ms-: Used by Internet Explorer and Edge.</li>
+      <li>-o-: Used by Opera.</li>
+    </ul>
+    <h2>Example Usage</h2>
+    <pre>
+      <code>
+        .example {
+          -webkit-transform: rotate(45deg); /* Chrome, Safari */
+          -moz-transform: rotate(45deg); /* Firefox */
+          -ms-transform: rotate(45deg); /* IE */
+          -o-transform: rotate(45deg); /* Opera */
+          transform: rotate(45deg); /* Standard */
+        }
+      </code>
+    </pre>
+    <h2>Further Reading</h2>
+    <p>
+      There is a website that help you deal with prefix faster. Visit
+      <a href="https://autoprefixer.github.io/">auto-prefix</a>
+    </p>
+    <p>The website should look like this:</p>
+    <img src="./img/auto-prefix.png" alt="auto-prefix" width="50%" />
+    <h2>Check if Properties are supported using that Browsers</h2>
+    <p>
+      You can check if a CSS property is supported by a specific browser using
+      the <a href="https://caniuse.com/">Can I use</a> website.
+    </p>
+    <p>
+      For example, to check if the <code>user-select</code> property is
+      supported, you can visit the link above. The results will show you the
+      support status across different browsers and versions.
+    </p>
+    <img src="./img/caniuse.png" alt="caniuse" width="60%" />
+  </body>
+</html>

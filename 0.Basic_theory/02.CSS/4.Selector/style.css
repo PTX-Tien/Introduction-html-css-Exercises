@@ -1,0 +1,19 @@
+/* ID selector */
+#main-paragraph {
+  background-color: green;
+}
+
+/* ID selector */
+#main-title {
+  color: blue;
+}
+
+/* Class selector */
+.highlight {
+  background-color: yellow;
+}
+
+.highlight-secondary {
+  color: orange;
+  font-size: 30px;
+}

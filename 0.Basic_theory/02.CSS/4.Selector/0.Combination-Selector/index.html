@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Combination Selector</title>
+  </head>
+  <body>
+    <a href="../index.html">Return</a>
+    <h1>Combination Selectors</h1>
+    <h2>1. * Selector</h2>
+    <p>
+      The <code>*</code> selector selects all elements in the document. It is a
+      universal selector that applies styles to every element.
+    </p>
+    <p><b>Example Usage</b></p>
+    <pre><code>* {
+    color: <b style="color: blue;">blue</b>;        /* Applies blue color to all text */
+    font-size: 30px;    /* Sets font size to 30px for all elements */
+}
+</code></pre>
+
+    <h2>2. Element.class Selectors</h2>
+    <p>
+      The <code>element.class</code> selector selects elements of a specific
+      type that also have a specific class. This allows you to style only those
+      elements that match both criteria.
+    </p>
+    <p><b>Example Usage</b></p>
+    <pre><code>p.highlight {
+    background-color: <b style="color: yellow;">yellow</b>; /* Highlights paragraphs with the 'highlight' class */
+}
+</code></pre>
+    <h3 class="highlight">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ad qui
+      blanditiis harum sequi ducimus! Temporibus obcaecati laborum explicabo
+      minus adipisci odio deleniti necessitatibus facere eos qui facilis, ab
+      voluptates!
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem id
+      explicabo harum nisi? Harum dicta, facere voluptatem et unde veniam saepe
+      ullam praesentium animi numquam doloremque provident laboriosam quisquam.
+    </p>
+    <p class="highlight">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem id
+      explicabo harum nisi? Harum dicta, facere voluptatem et unde veniam saepe
+      ullam praesentium animi numquam doloremque provident laboriosam quisquam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem id
+      explicabo harum nisi? Harum dicta, facere voluptatem et unde veniam saepe
+      ullam praesentium animi numquam doloremque provident laboriosam quisquam.
+    </p>
+    <h2>3. Element, Element</h2>
+    <p>
+      The <code>element, element</code> selector selects multiple elements of
+      the same type. This allows you to apply the same styles to different
+      elements without repeating the style rules.
+    </p>
+    <p><b>Example Usage</b></p>
+    <pre><code>h1, h2, h3 {
+    color: <b style="color: green;">green</b>;                     /* Applies green color to all headings */
+    font-family: Arial, sans-serif;   /* Sets font family for all headings */
+}
+</code></pre>
+    <h2>4. .Class1.Class2 selector</h2>
+    <p>
+      The <code>.Class1.Class2</code> selector selects elements that have both
+      Class1 and Class2. This is useful for applying styles to elements that
+      share multiple classes.
+    </p>
+    <p><b>Example Usage</b></p>
+    <p class="demo1">Demo paragraph 1 (demo1 )</p>
+    <p class="demo2">Demo paragraph 2 (demo2)</p>
+    <p class="demo1 demo2">Demo paragraph 3 (demo1 demo2)</p>
+    <p>Demo paragraph 4</p>
+    <p>Demo paragraph 5</p>
+
+    <h2>5. Space Selector</h2>
+    <p>
+      Bộ chọn <code>element element</code> là bộ chọn kết hợp giữa hai phần tử,
+      trong đó phần tử đầu tiên là phần tử cha và phần tử thứ hai là phần tử
+      con. Bộ chọn này cho phép bạn áp dụng kiểu cho các phần tử con của một
+      phần tử cha nhất định.
+    </p>
+    <p>
+      Giả sử div p là bộ chọn kết hợp giữa phần tử div và phần tử p. Bộ chọn này
+      sẽ áp dụng kiểu cho tất cả các phần tử p bên trong một phần tử div.
+    </p>
+    <p><b>Example Usage</b></p>
+    <h3>Tuổi trẻ</h3>
+    <h4 class="vd">Tiền không có</h4>
+    <h3 class="vd vd1">Quan hệ chưa có</h3>
+    <h3 id="line4">Đến cả tự tin cũng không có</h3>
+    <h3>Vậy bạn có cái gì?</h3>
+    <div>
+      <p>Đoạn văn 1</p>
+      <p>Đoạn văn 2</p>
+      <p>Đoạn văn 3</p>
+    </div>
+
+    <div class="loichuc">
+      <p>Chúc các bạn học tốt 1</p>
+      <p>Chúc các bạn học tốt 2</p>
+    </div>
+
+    <h2>6. Element > Element</h2>
+    <p>
+      Bộ chọn <code>element &gt; element</code> cho phép bạn lựa chọn các phần
+      tử con trực tiếp của một phần tử cha. Bộ chọn này giúp bạn áp dụng kiểu
+      cho các phần tử con mà không áp dụng cho các phần tử con của các phần tử
+      con.
+    </p>
+    <p>
+      Giả sử div &gt; p là bộ chọn kết hợp giữa phần tử div và phần tử p. Bộ
+      chọn này sẽ áp dụng kiểu cho tất cả các phần tử p trực tiếp bên trong một
+      phần tử div.
+    </p>
+    <p><b>Example Usage</b></p>
+    <div class="parent">
+      <p>Con trực tiếp thứ 1</p>
+      <p>Con trực tiếp thứ 2</p>
+      <div>
+        <p>Con gián tiếp thứ 1</p>
+        <p>Con gián tiếp thứ 2</p>
+      </div>
+      <p>Con trực tiếp thứ 3</p>
+    </div>
+
+    <h2>7. Element + Element</h2>
+    <p>
+      Bộ chọn <code>element + element</code> cho phép bạn lựa chọn phần tử ngay
+      sau một phần tử khác. Bộ chọn này giúp bạn áp dụng kiểu cho các phần tử
+      liền kề mà không áp dụng cho các phần tử không liền kề.
+    </p>
+    <p>
+      Giả sử h1 + p là bộ chọn kết hợp giữa phần tử h1 và phần tử p. Bộ chọn này
+      sẽ áp dụng kiểu cho tất cả các phần tử p ngay sau một phần tử h1.
+    </p>
+    <p><b>Example Usage</b></p>
+    <h3 class="hello">
+      Heading 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+      autem id explicabo harum nisi? Harum dicta, facere voluptatem et unde
+      veniam saepe ullam praesentium animi numquam doloremque provident
+      laboriosam quisquam.
+    </h3>
+    <p class="hello">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem id
+      explicabo harum nisi? Harum dicta, facere voluptatem et unde veniam saepe
+      ullam praesentium animi numquam doloremque provident laboriosam quisquam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem id
+      explicabo harum nisi? Harum dicta, facere voluptatem et unde veniam saepe
+      ullam praesentium animi numquam doloremque provident laboriosam quisquam.
+    </p>
+
+    <h2>8. Element ~ Element</h2>
+    <p>
+      Bộ chọn <code>element ~ element</code> cho phép bạn lựa chọn tất cả các
+      phần tử sau một phần tử khác. Bộ chọn này giúp bạn áp dụng kiểu cho tất cả
+      các phần tử sau một phần tử mà không cần quan tâm đến vị trí của chúng.
+    </p>
+    <p>
+      Giả sử h1 ~ p là bộ chọn kết hợp giữa phần tử h1 và tất cả các phần tử p
+      sau một phần tử h1. Bộ chọn này sẽ áp dụng kiểu cho tất cả các phần tử p
+      sau một phần tử h1.
+    </p>
+    <p><b>Example Usage</b></p>
+    <h3 class="example">
+      Heading 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+      autem id explicabo harum nisi? Harum dicta, facere voluptatem et unde
+      veniam saepe ullam praesentium animi numquam doloremque provident
+      laboriosam quisquam.
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem id
+      explicabo harum nisi? Harum dicta, facere voluptatem et unde veniam saepe
+      ullam praesentium animi numquam doloremque provident laboriosam quisquam.
+    </p>
+    <p class="example">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem id
+      explicabo harum nisi? Harum dicta, facere voluptatem et unde veniam saepe
+      ullam praesentium animi numquam doloremque provident laboriosam quisquam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem id
+      explicabo harum nisi? Harum dicta, facere voluptatem et unde veniam saepe
+      ullam praesentium animi numquam doloremque provident laboriosam quisquam.
+    </p>
+  </body>
+</html>
