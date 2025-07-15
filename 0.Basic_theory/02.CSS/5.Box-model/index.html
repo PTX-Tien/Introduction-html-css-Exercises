@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Box Model</title>
+  </head>
+  <body>
+    <h1>CSS Box Model - Mô hình hộp CSS</h1>
+    <p>
+      <b>Box Model:</b> Trình duyệt luôn coi mỗi phần tử là 1 box - hộp chữ nhật
+    </p>
+    <ul>
+      <li>
+        <b>Nội dung</b> (width, height) <b style="color: violet">-></b> hình
+        ảnh, text, video...
+      </li>
+      <li>
+        <b>padding</b> <b style="color: violet">-></b> khoảnh đệm nội dung và
+        viền (không chứa nội dung)
+      </li>
+      <li>
+        <b>border</b> <b style="color: violet">-></b> viền của phần tử (viền nét
+        liền, đứt...)
+      </li>
+      <li>
+        <b>margin</b> <b style="color: violet">-></b>
+        <b style="color: violet">Khoảng cách với các phần tử liền kề khác</b>
+      </li>
+    </ul>
+
+    <p>
+      <b>NOTE:</b> Kích thước cao * rộng 1 phần tử =
+      <b style="color: red">content + padding + border</b> (Không bao gồm
+      margin)
+    </p>
+
+    <h2>1. Padding</h2>
+    <div id="padding">Content</div>
+
+    <h2>2. Border - Viền</h2>
+    <p>
+      Syntax:
+      <code id="syntax"
+        >&lt;line-width&gt; || &lt;line-style&gt; || &lt;color&gt;</code
+      >
+    </p>
+    <p>Lần lượt là <b style="color: red">Độ rộng - Kiểu viền - Màu viền</b></p>
+    <p>Một số thuộc tính viền, thay cho <b style="color: red">solid</b></p>
+    <ul>
+      <li>dashed -> đường nét đứt</li>
+      <li>dotted -> chấm dot</li>
+      <li>double -> 2 đường song song liền nhau</li>
+      <li>groove -> viền 3D</li>
+      <li>ridge -> viền 3D</li>
+      <li>inset -> viền 3D</li>
+      <li>outset -> viền 3D</li>
+    </ul>
+    <div id="border">Context</div>
+  </body>
+</html>

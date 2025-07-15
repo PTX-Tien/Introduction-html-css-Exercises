@@ -1,0 +1,23 @@
+div#padding {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: yellow;
+  padding: 20px;
+}
+
+code#syntax {
+  background-color: burlywood;
+  font-size: 20px;
+}
+
+div#border {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  color: greenyellow;
+  padding: 20px;
+  border: 20px outset blue;
+
+  border-radius: 30px 50px 70px 90px;
+}

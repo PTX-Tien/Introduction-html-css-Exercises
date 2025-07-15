@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Priority</title>
+  </head>
+  <body>
+    <a href="../index.html">Return</a>
+    <h1>Mức độ ưu tiên CSS Selector</h1>
+    <p>
+      Mức độ ưu tiên <b style="color: red">(Mạnh -> Yếu)</b> áp dụng khi có
+      nhiều thuộc tính chồng chéo nhau cùng tác động lên 1 phần tử
+    </p>
+
+    <ol>
+      <li><b style="color: red">!important</b></li>
+      <li><b style="color: red">Inline style (Viết trên code HTML)</b></li>
+      <li>
+        <b
+          ><i>ID (<b style="color: violet">#</b>) selector</i></b
+        >
+      </li>
+      <li>
+        <b>
+          <i>
+            Class (<b style="color: violet">.</b>) hoặc Pseudo-class (<b
+              style="color: violet"
+              >:
+            </b>
+            ) selector
+          </i>
+        </b>
+      </li>
+      <li>
+        <b>
+          <i
+            >Element selector (<b style="color: violet">h, p, li, div,</b
+            >...)</i
+          >
+        </b>
+      </li>
+      <li>
+        <b>
+          <i
+            >Universal selector (<b style="color: violet">*</b>) : Bộ chọn
+            chung</i
+          >
+        </b>
+      </li>
+    </ol>
+
+    <h2>Test game</h2>
+    <div>
+      <p class="x">p.x</p>
+      <h3 class="x">h3.x</h3>
+      <p class="x">p.x</p>
+      <h3 class="x">h3.x</h3>
+      <p>p</p>
+      <h3>h3</h3>
+    </div>
+  </body>
+</html>
