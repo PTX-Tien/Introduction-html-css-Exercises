@@ -1,0 +1,29 @@
+/* Được dùng để chuẩn hóa font-size html về 10px ~ 1rem cho dễ tính toán */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: aqua;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  background-color: pink;
+  border-radius: 99.9rem;
+  color: black;
+
+  /* Vì inline không hỗ trợ padding, margin, width, height */
+  /* Nên phải chuyển sang display: inline-block; */
+  display: inline-block;
+  width: 10rem;
+  height: 1.84rem;
+  padding: 0.8rem 1rem;
+  text-align: center;
+}
+
+a:hover {
+  background-color: black;
+  color: pink;
+}
