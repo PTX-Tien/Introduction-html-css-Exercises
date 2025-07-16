@@ -1,0 +1,38 @@
+/* Margin collapse bị ảnh hưởng theo chiều dọc */
+.box {
+  width: 200px;
+  height: 200px;
+  border: 10px solid red;
+}
+
+.box1 {
+  margin-bottom: 50px;
+}
+
+.box2 {
+  margin-top: 70px;
+}
+
+/* Margin collapse không bị theo chiều ngang */
+.item {
+  background-color: yellow;
+  border: 2px solid red;
+}
+
+.item1 {
+  margin-right: 10px;
+}
+
+.item2 {
+  margin-left: 10px;
+}
+
+/* Khắc phục Margin Collapse */
+/* Cách 1: dàn trang theo 1 chiều nhất quán (Trên xuống hoặc Dưới lên) */
+
+/* Cách 2: Thêm thuộc tính "display: flex"
+vào thẻ cha*/
+body {
+  display: flex;
+  flex-direction: column; /* Hướng flex */
+}

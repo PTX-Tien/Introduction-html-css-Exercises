@@ -21,3 +21,25 @@ div#border {
 
   border-radius: 30px 50px 70px 90px;
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  background-color: lightgrey;
+  border: 10px solid purple;
+}
+
+.box2 {
+  background-color: red;
+
+  margin-left: 220px;
+}
+
+.box3 {
+  background-color: red;
+
+  margin-left: 420px;
+}
