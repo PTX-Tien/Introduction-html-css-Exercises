@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Typography</title>
+  </head>
+  <body>
+    <h1>Typography</h1>
+    <h2>1. text-align</h2>
+    <p>
+      Thuộc tính
+      <code><strong>text-align</strong></code> chỉ căn text so với box chứa nó
+    </p>
+
+    <h2>2. text-decoration</h2>
+    <p>
+      Một số values của thuộc tính <code><strong>text-decoration</strong></code>
+    </p>
+    <ul>
+      <li><b>none</b></li>
+      <li><b>underline</b> - thêm gạch chân</li>
+      <li><b>line-through</b> - thêm gạch ngang</li>
+      <li><b>overline</b> - gạch trên đầu</li>
+      <li>
+        &lt;<b>vị trí gạch</b>&gt; &lt;<b>kiểu dấu gạch</b>&gt; &lt;<b
+          >màu sắc</b
+        >&gt; &lt;<b>kích thước</b>&gt;
+      </li>
+    </ul>
+
+    <h2>3. text-indent - Thụt lề</h2>
+    <p>
+      <code><strong>text-indent: 40px</strong></code> => Thụt lề
+      <code><strong>40px</strong></code>
+    </p>
+
+    <h2>4. text-transform</h2>
+    <p>
+      Một số values của thuộc tính <code><strong>text-transform</strong></code>
+    </p>
+    <ul>
+      <li><b>capitalize</b> - Viết hoa chữ cái đầu</li>
+      <li><b>lowercase</b> - Viết thường toàn bộ text</li>
+      <li><b>uppercase</b> - Viết hoa toàn bộ text</li>
+    </ul>
+
+    <h2>5. white-space - Quy định về khoảng trắng khi code</h2>
+    <p>
+      Một số values của thuộc tính <code><strong>white-space</strong></code>
+    </p>
+    <ul>
+      <li><b>normal</b> - Trạng thái mặc định</li>
+      <li><b>nowrap</b> - Không xuống dòng kể cả chạm đến lề</li>
+      <li>
+        <b>pre</b> - Giữ nguyên định dạng code (giống thẻ &lt;<b>pre</b>&gt;)
+      </li>
+      <li>
+        <b>pre-line</b> - Giữ định dạng theo line (enter)
+        <ul>
+          <li>
+            Tất cả dấu khoảng trắng thừa mỗi dòng
+            <b style="color: red">trong nội dung sẽ bị loại bỏ</b>
+          </li>
+          <li>
+            Dòng mới (Xuống dòng) <b style="color: red">được giữa nguyên</b>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>pre-wrap</b> - Tương tự <b>pre</b>, nhưng mà tự động ngắt xuống dòng
+        (còn <b>pre</b> thì hết câu mới xuống dòng)
+      </li>
+    </ul>
+
+    <h2>6. word-break</h2>
+    <p>
+      Khi đoạn text hoặc link dài, người dùng nhập liền nhau thì có thể gây vỡ
+      giao diện vì text không bị xuống dòng.
+    </p>
+    <p>
+      => Có thể dùng <code><strong>word-break: break-all</strong></code> để bẻ
+      xuống hàng
+    </p>
+
+    <h2>7. text-shadow - Đổ bóng text</h2>
+    <p>
+      Các values của thuộc tính <code><strong>text-shadow</strong></code> được
+      biểu diễn như sau:
+    </p>
+    <p>
+      <code><strong>text-shadow:</strong></code>
+      <code
+        ><strong
+          >&lt;horizontal&gt; &lt;vertical&gt; &lt;blur&gt;
+          &lt;color&gt;</strong
+        >
+      </code>
+    </p>
+
+    <h2>8. overflow</h2>
+    <p>Cách xử lý khi nội dung bị tràn</p>
+    <ul>
+      <li>
+        <b>Visible</b> (default) - Thuộc tính mặc định:
+        <b style="color: red">hiển thị nội dung kể cả vượt box chứa</b>
+      </li>
+      <li><b>hidden</b> - Ẩn nội dung: khi nội dung vượt box chứa</li>
+      <li><b>scroll</b> - Tạo thanh cuộn</li>
+      <li>
+        <b>auto</b>
+        <ul>
+          <li>Nếu nội dung ngắn => Không có scroll bar</li>
+          <li>Nếu nội dung vượt box chứa => Tự động sinh ra scroll bar</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>9. text-overflow</h2>
+    <p class="text-box-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat
+      esse in debitis id aliquam iure, est ratione quisquam officia eaque ex
+      perspiciatis doloremque natus ea dignissimos similique eius quam!
+    </p>
+    <p class="text-box-2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quam
+      ipsa voluptates blanditiis iste voluptatibus et nihil, qui molestiae
+      necessitatibus, esse maxime ratione ipsam modi delectus, illo quis amet
+      architecto?
+    </p>
+  </body>
+</html>
