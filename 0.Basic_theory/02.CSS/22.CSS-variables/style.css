@@ -1,0 +1,43 @@
+/* Dễ thấy 3 class box đều cần thiết lập giống nhau
+Nhưng khi thay đổi, thì cần phải thay đổi ở 3 nơi, mất thời gian */
+/* .box1 {
+  background-color: green;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.box2 {
+  background-color: green;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.box3 {
+  background-color: green;
+  height: 100px;
+  margin-bottom: 10px;
+} */
+
+/* Để tránh mất thời gian, sử dụng biến để tái sử dụng */
+:root {
+  --box-height: 100px;
+  --box-color: green;
+}
+
+.box1 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+}
+
+.box2 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+}
+
+.box3 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+}

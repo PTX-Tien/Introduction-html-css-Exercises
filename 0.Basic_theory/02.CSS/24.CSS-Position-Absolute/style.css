@@ -1,0 +1,21 @@
+.noti {
+  margin: 5rem;
+  font-size: 10rem;
+  color: violet;
+  background-color: aquamarine;
+  position: relative;
+}
+
+.mes-number {
+  font-size: 4rem;
+  padding: 0.5rem;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+
+  /* Mặc định thẻ <span> là inline
+  nên để tách element ra khỏi luồng thì có thể dùng position: absolute */
+  position: absolute;
+  top: -35px;
+  left: 100px;
+}

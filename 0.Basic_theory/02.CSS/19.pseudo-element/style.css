@@ -1,0 +1,28 @@
+.box p::first-line {
+  color: red;
+}
+
+.box p::selection {
+  background-color: yellow;
+}
+
+.box p::first-letter {
+  font-size: 3em;
+}
+
+::marker {
+  color: red;
+}
+
+.box::before {
+  content: "Em ở đằng trước nè";
+}
+
+.box::after {
+  display: inline-block;
+  content: "";
+  height: 5px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+.nav {
+  height: 100px;
+  background-color: #ccc;
+  /* Có nghĩa là: 100% (Kích thước của width lấy từ bố) - 100px (Gap giữa bố và con là 100px) */
+  /* Và do có căn giữa, nên gap giữa bố và con là 50px mỗi bên */
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+.main_content {
+  background-color: blue;
+
+  /* Không sử dụng 100% trong tình huống này vì: */
+  /* các thẻ trong body sẽ tự động dãn theo nội dung, 
+  nên nếu lấy 100% ở đây tức là lấy height = 100px từ .nav chứ không phải chiều cao của cả trang 
+  (100px - 100px = 0px) */
+
+  /* Vì vậy trong tình huống này phải sử dụng vh - viewport height 
+  -> Lấy toàn bộ chiều cao của phần quan sát được */
+  height: calc(100vh - 100px);
+}

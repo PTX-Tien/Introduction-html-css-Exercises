@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Position</title>
+  </head>
+  <body>
+    <h1>CSS Position</h1>
+    <p>
+      Thuộc tính <b style="color: violet">Position</b> cho phép điều chỉnh vị
+      trí các phần tử trên trang web.
+    </p>
+    <h2>1. CSS Position Static vs Relative</h2>
+    <h3>CSS Position Static</h3>
+    <p>Đây là giá trị <b style="color: red">mặc định</b> của position</p>
+    <h3>CSS Position Relative</h3>
+    <p>
+      Định vị so với <b style="color: red">vị trí ban đầu</b> của nó một khoảng
+      x:
+    </p>
+    <ul>
+      <li>
+        <b style="color: violet">left</b> - Cách lề
+        <b style="color: red">trái</b> ban đầu một khoảng x
+      </li>
+      <li>
+        <b style="color: violet">right</b> - Cách lề
+        <b style="color: red">phải</b> ban đầu một khoảng x
+      </li>
+      <li>
+        <b style="color: violet">top</b> - Cách lề
+        <b style="color: red">trên</b> ban đầu một khoảng x
+      </li>
+      <li>
+        <b style="color: violet">bottom</b> - Cách lề
+        <b style="color: red">dưới</b> ban đầu một khoảng x
+      </li>
+    </ul>
+    <p>
+      Tuy nhiên,
+      <b style="color: red">không có bất kỳ không gian mới nào được tạo</b> ra
+      để chứa phần tử được định vị theo kiểu này, vì vậy các phần tử khác trong
+      trang web vẫn có thể bị che khuất bởi phần tử được định vị theo kiểu
+      relative
+    </p>
+
+    <h2>2. CSS Position Absolute</h2>
+    <hr />
+    <div class="content">
+      <div class="box box1">Khối 1</div>
+      <div class="box box2">Khối 2</div>
+      <div class="box box3">Khối 3</div>
+      <h1>Tuhoc.cc</h1>
+    </div>
+  </body>
+</html>
